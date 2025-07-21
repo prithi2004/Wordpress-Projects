@@ -1,0 +1,69 @@
+# 🧰 Custom Job Board – WordPress Plugin
+
+A simple, lightweight WordPress plugin to create and manage job listings using custom post types, shortcodes, and the REST API.
+---
+
+## 📦 Features
+
+- ✅ Custom Post Type: `job_listing`
+- ✅ Shortcode: `[job_board]` to display jobs on the frontend
+- ✅ REST API endpoint: `/wp-json/cjb/v1/jobs`
+- ✅ Custom styling with basic CSS
+- ✅ Built with WordPress coding standards
+
+---
+
+## 🚀 Installation
+
+1. Download or clone this repository.
+2. Copy the folder `custom-job-board` into your WordPress `wp-content/plugins/` directory.
+3. Activate the plugin from the WordPress admin dashboard under **Plugins**.
+4. Add jobs via **Jobs > Add New**.
+5. Use the shortcode `[job_board]` in any post or page to show job listings.
+
+---
+
+## 🧪 Usage
+
+### 📄 Add the Shortcode
+
+Add this to any page or post:
+
+
+### 🌐 REST API
+
+Fetch job listings via:
+
+
+Returns a list of job posts in JSON format.
+
+---
+
+## 🛠 Development
+
+### Folder Structure
+
+
+---
+
+### Optional Enhancements
+
+- Add pagination to the job board
+- Create a front-end job application form
+- Add admin settings page
+- Add unit tests using `PHPUnit`
+- Use WP-CLI to manage jobs via terminal
+
+---
+
+## 🧑‍💻 Author
+
+**Your Name**  
+GitHub: [@yourusername](https://github.com/prithi2004)  
+Email: prithibabu60@gmail.com
+
+---
+
+## 📜 License
+
+This plugin is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
