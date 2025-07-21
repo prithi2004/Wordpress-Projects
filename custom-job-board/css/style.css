@@ -1,0 +1,10 @@
+.cjb-job-board {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: #f9f9f9;
+}
+.cjb-job {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
