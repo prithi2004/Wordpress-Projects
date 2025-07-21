@@ -1,0 +1,85 @@
+<?php
+/**
+ * Plugin Name: Custom Welcome Message
+ * Description: Adds a customizable welcome message in the WordPress admin dashboard.
+ * Version: 1.0
+ * Author: Your Name
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+class Custom_Welcome_Message {
+
+    private $option_name = 'cwm_welcome_message';
+
+    public function __construct() {
+        add_action( 'admin_notices', [ $this, 'show_welcome_message' ] );
+        add_action( 'admin_menu', [ $this, 'add_settings_page' ] );
+        add_action( 'admin_init', [ $this, 'register_settings' ] );
+    }
+
+    public function show_welcome_message() {
+        if ( ! current_user_can( 'manage_options' ) ) return;
+
+        $message = get_option( $this->option_name, 'Welcome to your WordPress Dashboard!' );
+
+        echo '<div class="notice notice-success is-dismissible">';
+        echo '<p>' . esc_html( $message ) . '</p>';
+        echo '</div>';
+    }
+
+    public function add_settings_page() {
+        add_options_page(
+            'Welcome Message',
+            'Welcome Message',
+            'manage_options',
+            'custom-welcome-message',
+            [ $this, 'settings_page_html' ]
+        );
+    }
+
+    public function settings_page_html() {
+        ?>
+        <div class="wrap">
+            <h1>Custom Welcome Message Settings</h1>
+            <form method="post" action="options.php">
+                <?php
+                settings_fields( 'cwm_settings_group' );
+                do_settings_sections( 'custom-welcome-message' );
+                submit_button();
+                ?>
+            </form>
+        </div>
+        <?php
+    }
+
+    public function register_settings() {
+        register_setting( 'cwm_settings_group', $this->option_name, [
+            'type' => 'string',
+            'sanitize_callback' => 'sanitize_text_field',
+            'default' => 'Welcome to your WordPress Dashboard!',
+        ]);
+
+        add_settings_section(
+            'cwm_main_section',
+            'Welcome Message Settings',
+            function() { echo '<p>Set your custom welcome message below.</p>'; },
+            'custom-welcome-message'
+        );
+
+        add_settings_field(
+            $this->option_name,
+            'Welcome Message',
+            [ $this, 'welcome_message_field_html' ],
+            'custom-welcome-message',
+            'cwm_main_section'
+        );
+    }
+
+    public function welcome_message_field_html() {
+        $value = get_option( $this->option_name, '' );
+        echo '<input type="text" name="' . esc_attr($this->option_name) . '" value="' . esc_attr( $value ) . '" style="width: 100%;" />';
+    }
+}
+
+new Custom_Welcome_Message();
