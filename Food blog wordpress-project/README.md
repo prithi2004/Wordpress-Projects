@@ -27,9 +27,6 @@ export.xml
 README.md
 ```
 
-## 📸 Screenshots
-
-Located in `/screenshots/` folder. Replace with your actual screenshots.
 
 ## 🛠️ How to Use
 
