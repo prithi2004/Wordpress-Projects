@@ -30,11 +30,12 @@ A beautiful and responsive food blogging website built using WordPress, Astra Th
 
 ## 🖼️ Screenshots
 
-| Home Page  | Contact Page |
+| Home Page | Blog Post | Contact Page |
 |-----------|-----------|--------------|
-| ![](screenshots/homepage.png) | ![](screenshots/contact-form.png) |
+| ![](screenshots/homepage.png) | ![](screenshots/blog-post.png) | ![](screenshots/contact-form.png) |
 
 ---
+
 
 ## 🛠️ How to Install Locally
 
