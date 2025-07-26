@@ -1,47 +1,62 @@
-# 🍽️ Food Blog – WordPress Project
+# 🍽️ FoodieFiesta – WordPress Food Blog Website
 
-A simple WordPress-based food blog project using the Astra theme and free plugins. Ideal for beginners and rtCamp shortlist preparation.
+A beautiful and responsive food blogging website built using WordPress, Astra Theme, and Elementor. This project demonstrates the use of custom pages, categories, featured images, and SEO optimization using plugins.
 
-## 🔧 Technologies Used
+---
+
+## 🚀 Features
+
+- Custom Home Page with Blog Grid Layout
+- Single Post Templates with Author Info
+- Categories like: *Spicy*, *Sweet*, *Healthy*
+- Responsive Design (mobile-friendly)
+- Elementor for page building
+- Contact Form (Contact Form 7 plugin)
+- SEO Integration (using RankMath or Yoast)
+- Theme: Astra (Free version)
+
+---
+
+## 🧰 Tech Stack
 
 - WordPress CMS
 - Astra Theme
-- Elementor Page Builder (free)
+- Elementor (Free)
 - Contact Form 7 Plugin
-- HTML, CSS, PHP (WordPress templating)
+- RankMath SEO Plugin
+- PHP, MySQL (via XAMPP/LocalWP)
 
-## 📦 Folder Structure
+---
 
-```
-/wp-content/
-  /themes/
-    /astra/
-  /plugins/
-    contact-form-7.txt
-    elementor.txt
-/screenshots/
-  homepage.png
-  post-page.png
-  dashboard.png
-export.xml
-README.md
-```
+## 🖼️ Screenshots
+
+| Home Page | Blog Post | Contact Page |
+|-----------|-----------|--------------|
+| ![](screenshots/homepage.png) | ![](screenshots/blog-post.png) | ![](screenshots/contact-form.png) |
+
+---
+
+## 🛠️ How to Install Locally
+
+1. Clone the repo or download as ZIP
+2. Launch **LocalWP** or **XAMPP**
+3. Import `food-blog.sql` into phpMyAdmin
+4. Copy `wp-content` to your WordPress install folder
+5. Activate the Astra theme & install required plugins
+6. Navigate to Home and start exploring
+
+---
 
 
-## 🛠️ How to Use
 
-1. Download and install WordPress locally (using XAMPP or LocalWP).
-2. Copy `wp-content` into your WordPress installation.
-3. Import `export.xml` using Tools → Import → WordPress.
-4. Activate the Astra theme and install plugins (Elementor, Contact Form 7).
-5. Customize the content and enjoy your food blog.
+## 👤 Author
 
-## 🙋‍♀️ Author
+- Prithi Babu  
+- 🌐 [GitHub Profile](https://github.com/prithi2004)  
+- 📫 [LinkedIn](https://www.linkedin.com/in/prithi2004)
 
-**Prithi B**  
-[GitHub](https://github.com/prithi2004)  
-[LinkedIn](https://www.linkedin.com/in/prithi2004/)
+---
 
-## ⭐ Show Your Support
+## 📌 License
 
-Star this repo and share with your network if you found it useful!
+This project is licensed under the MIT License.
