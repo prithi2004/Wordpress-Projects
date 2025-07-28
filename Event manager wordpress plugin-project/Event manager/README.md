@@ -79,15 +79,7 @@ Please ensure code quality and WordPress coding standards compliance.
 
 ---
 
-## Frequently Asked Questions (FAQ)
 
-**Q:** Can I customize the event display templates?  
-**A:** Yes, you can override the plugin templates by placing your custom template files in your active theme’s folder following the plugin’s structure.
-
-**Q:** Does the plugin support payments or ticketing?  
-**A:** Not in this version, but payment integration is planned for future releases.
-
----
 
 ## Changelog
 
@@ -104,11 +96,11 @@ This plugin is licensed under the MIT License - see the [LICENSE](LICENSE) file 
 
 ## Credits
 
-Developed by [Your Name](https://github.com/yourusername)
+Developed by [Your Name](https://github.com/prithi2004)
 
 ---
 
 ## Contact
 
-For help or support, please open an issue on GitHub or contact me at your.email@example.com.
+For help or support, please open an issue on GitHub or contact me at prithibabu69@gmail.com.
 
