@@ -1,19 +1,34 @@
-# 🍲 Food Blog WordPress Project
+# 🍽️ Food Blog – WordPress Project
 
-A custom-designed WordPress website built for food bloggers to share recipes, culinary tips, and restaurant experiences.
+This is a simple and responsive Food Blog website built using **WordPress** with **free themes** and **popular plugins**. It showcases blog posts, images, and information about delicious recipes and travel experiences.
+
+## 🔥 Features
+
+- Home, About, Blog, and Contact pages
+- Mobile-friendly and responsive layout
+- Integrated blog post feature using WordPress editor
+- Contact form using **Contact Form 7**
+- Custom sections using **Elementor**
+- SEO-friendly and easy to customize
+
+## 🛠️ Tech Stack
+
+- ✅ WordPress (CMS)
+- ✅ HTML, CSS (via theme customization)
+- ✅ Free Theme: Astra
+- ✅ Plugins: Elementor, Contact Form 7
+
+
+## 📷 Screenshots
+
+| Homepage | Blog Page | Contact Page |
+|----------|-----------|--------------|
+| ![](screenshots/homepage.png) | ![](screenshots/blog.png) | ![](screenshots/contact.png) |
 
 ---
 
-## 📌 Features
+## 📁 Folder Structure
 
-- Custom Homepage with Banner & Featured Recipes
-- Blog Page for Latest Posts
-- Categories: Spicy, Sweet, Healthy, etc.
-- Responsive layout using a free WordPress theme
-- Contact Form Integration (WPForms)
-- SEO & Speed Optimized (with free plugins)
-
----
 
 ## 💻 Tech Stack
 
@@ -25,19 +40,8 @@ A custom-designed WordPress website built for food bloggers to share recipes, cu
 
 ---
 
-## 🚀 Live Demo
 
-🟢 [Live Site on 000Webhost](#) (Replace with your actual link)
 
----
-
-## 📷 Screenshots
-
-| Homepage | Blog Page | Contact Page |
-|----------|-----------|--------------|
-| ![](screenshots/homepage.png) | ![](screenshots/blog.png) | ![](screenshots/contact.png) |
-
----
 
 ## 🛠️ Installation Instructions
 
